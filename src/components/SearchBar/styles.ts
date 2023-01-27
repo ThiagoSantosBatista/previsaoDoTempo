@@ -4,30 +4,31 @@ export const Form = styled.form`
   display: flex;
   align-items: center;
   border-radius: 1.5rem;
-  background-color: rgba(1, 0, 17, 0.4);
+  backdrop-filter: blur(2rem);
 `;
 
 export const Input = styled.input`
   width: 100%;
-  height: 7rem;
+  height: 6rem;
   padding: 0 2rem;
   border: 0.1rem solid #ffffff;
   border-radius: 1.5rem 0 0 1.5rem;
-  background: none;
-  font-size: 2.4rem;
-  color: rgba(255, 255, 255, 0.8);
-
+  background: rgba(1, 0, 17, 0.4);
+  font-size: 2rem;
+  color: #ffffff;
 
   &::placeholder {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
   }
-`
+`;
 
 export const Button = styled.button`
-  height: 7rem;
+  display: flex;
+  align-items: center;
+  height: 6rem;
   padding: 0 2rem;
   border: 0.1rem solid #ffffff;
   border-radius: 0 1.5rem 1.5rem 0;
-  background: none;
+  background: rgba(1, 0, 17, 0.7);
   cursor: pointer;
 `;

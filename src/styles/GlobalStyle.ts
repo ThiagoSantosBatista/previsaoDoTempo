@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import Background from "../assets/background.jpg";
 
 const GlobalStyle = createGlobalStyle`
   *, *::after, *::before{
@@ -7,13 +6,15 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-weight: 400;
+    font-family: 'Inter', sans-serif;
   }
   html{
     font-size: 62.5%;
   }
   body{
     min-height: 100vh;
-    background-image: linear-gradient(to right , #4776E6, #884CE5);
+    color: #ffffff;
+    background: linear-gradient(to right top, #07179D, #1FB1E1);
     font-size: 1.6rem;
   }
   img{
