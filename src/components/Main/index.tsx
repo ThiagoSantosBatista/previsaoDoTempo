@@ -1,4 +1,6 @@
 import React from "react";
+import CardDados from "../CardDados";
+import CardTempo from "../CardTempo";
 import SearchBar from "../SearchBar";
 import * as S from "./styles";
 
@@ -7,13 +9,8 @@ const Main = () => {
     <S.Main>
       <SearchBar />
       <S.CardsSection>
-        <S.CardTempo>
-          <p>Tempo em Jundiaí:</p>
-          <h1>Chuva Fraca</h1>
-        </S.CardTempo>
-        <S.CardDados>
-
-        </S.CardDados>
+        <CardTempo />
+        <CardDados />
         <article>
 
         </article>

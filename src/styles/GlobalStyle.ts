@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import Background from '../assets/imgs/background.svg'
 
 const GlobalStyle = createGlobalStyle`
   *, *::after, *::before{
@@ -14,7 +15,10 @@ const GlobalStyle = createGlobalStyle`
   body{
     min-height: 100vh;
     color: #ffffff;
-    background: linear-gradient(to right top, #07179D, #1FB1E1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: url(${Background});
     font-size: 1.6rem;
   }
   img{
