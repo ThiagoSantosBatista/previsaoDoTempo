@@ -1,4 +1,5 @@
 import React from "react";
+import CardCincoDias from "../CardCincoDias";
 import CardDados from "../CardDados";
 import CardTempo from "../CardTempo";
 import SearchBar from "../SearchBar";
@@ -11,9 +12,7 @@ const Main = () => {
       <S.CardsSection>
         <CardTempo />
         <CardDados />
-        <article>
-
-        </article>
+        <CardCincoDias />
       </S.CardsSection>
     </S.Main>
   );

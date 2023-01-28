@@ -29,6 +29,6 @@ export const Button = styled.button`
   padding: 0 2rem;
   border: 0.1rem solid #ffffff;
   border-radius: 0 1.5rem 1.5rem 0;
-  background: rgba(1, 0, 17, 0.7);
+  background: rgba(1, 0, 17, 0.6);
   cursor: pointer;
 `;
