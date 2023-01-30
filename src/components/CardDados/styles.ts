@@ -1,51 +1,51 @@
 import styled from "styled-components";
 
-export const CardDados = styled.article`
+export const CardDados = styled.section`
   grid-area: dados;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3.2rem;
+  padding: 4rem 3.2rem;
   border-radius: 3rem;
   border: 0.1rem solid #ffffff;
   background: rgba(1, 0, 17, 0.4);
   backdrop-filter: blur(2rem);
 `;
 
-export const LocationDiv = styled.div`
+export const TempoHeader = styled.header`
   display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  margin-bottom: 1.6rem;
-`;
-
-export const TempoDiv = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 3.2rem;
+  justify-content: space-between;
   margin-bottom: 4rem;
-
-  h2 {
-    font-size: 6.4rem;
-    font-weight: 600;
-  }
 `;
 
-export const DadosDiv = styled.div`
+export const TempoContent = styled.div`
+ p:first-child {
+    font-size: 4.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 2rem;
+    font-weight: 500;
+  }
+`
+
+export const DadosUl = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0.8rem;
 `;
 
-export const DadosItem = styled.div`
+export const DadosItem = styled.li`
   display: flex;
   align-items: center;
   gap: 0.8rem;
 
   p {
     color: rgba(255, 255, 255, 0.85);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
   }
 `;

@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const Form = styled.form`
+  grid-area: search;
   display: flex;
   align-items: center;
   border-radius: 1.5rem;
+  margin-bottom: 8.4rem;
   backdrop-filter: blur(2rem);
 `;
 
@@ -18,7 +20,7 @@ export const Input = styled.input`
   color: #ffffff;
 
   &::placeholder {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.85);
   }
 `;
 

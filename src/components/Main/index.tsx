@@ -1,19 +1,17 @@
 import React from "react";
+import SearchBar from "../SearchBar";
+import CardCidade from "../CardCidade";
 import CardCincoDias from "../CardCincoDias";
 import CardDados from "../CardDados";
-import CardTempo from "../CardTempo";
-import SearchBar from "../SearchBar";
 import * as S from "./styles";
 
 const Main = () => {
   return (
     <S.Main>
       <SearchBar />
-      <S.CardsSection>
-        <CardTempo />
-        <CardDados />
-        <CardCincoDias />
-      </S.CardsSection>
+      <CardCidade />
+      <CardDados />
+      <CardCincoDias />
     </S.Main>
   );
 };

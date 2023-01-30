@@ -14,7 +14,7 @@ const CardDia = ({dia, src, tempo, min, max}:CardDiaProps) => {
     <S.Li>
         <p>{dia}</p>
         <img src={src} alt="" />
-        <h4>{tempo}</h4>
+        <h3>{tempo}</h3>
         <p>{min}</p>
         <p>{max}</p>
     </S.Li>
