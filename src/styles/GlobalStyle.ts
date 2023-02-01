@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import Background from '../assets/imgs/background.svg'
+import Background from "../assets/svgs/background.svg";
 
 const GlobalStyle = createGlobalStyle`
   *, *::after, *::before{
@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background: url(${Background});
+    background-image: url(${Background});
     font-size: 1.6rem;
   }
   img{

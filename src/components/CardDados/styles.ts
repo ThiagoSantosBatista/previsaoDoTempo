@@ -16,10 +16,15 @@ export const TempoHeader = styled.header`
   display: flex;
   justify-content: space-between;
   margin-bottom: 4rem;
+
+  img{
+    height: 10rem;
+    width: 10rem;
+  }
 `;
 
 export const TempoContent = styled.div`
- p:first-child {
+  p:first-child {
     font-size: 4.8rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -28,13 +33,15 @@ export const TempoContent = styled.div`
     color: rgba(255, 255, 255, 0.85);
     font-size: 2rem;
     font-weight: 500;
+    &::first-letter {
+      text-transform: uppercase;
+    }
   }
-`
+`;
 
 export const DadosUl = styled.ul`
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 0.8rem;
 `;
 

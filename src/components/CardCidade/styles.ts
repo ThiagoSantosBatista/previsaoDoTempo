@@ -9,6 +9,7 @@ export const CardCidade = styled.section`
   border: 0.1rem solid #ffffff;
   background: rgba(1, 0, 17, 0.4);
   backdrop-filter: blur(2rem);
+  text-align: center;
 
   h1 {
     color: rgba(255, 255, 255, 0.9);

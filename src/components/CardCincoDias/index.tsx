@@ -2,8 +2,9 @@ import React from "react";
 import SolSvg from "../../assets/svgs/sol.svg";
 import NubladoSvg from "../../assets/svgs/nublado.svg";
 import ChuvaRaiosSvg from "../../assets/svgs/chuvaRaios.svg";
-import * as S from "./styles";
 import CardDia from "./CardDia";
+import { WeatherProps } from "../../types/weather";
+import * as S from "./styles";
 
 const diasList = [
   {

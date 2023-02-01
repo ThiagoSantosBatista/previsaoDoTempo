@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactComponent as SearchSvg } from "../../assets/svgs/search.svg";
-import * as S from './styles'
+import * as S from "./styles";
 
-const SearchBar = () => {
+interface SearchBarProps {
+  weather: (city: string) => Promise<void>;
+}
+
+const SearchBar = ({ weather }: SearchBarProps) => {
+  const [city, setCity] = useState("");
+
+  function handleKeyDown(e: React.KeyboardEvent){
+    if(e.key === 'Enter'){
+      weather(city)
+    }
+  }
+
   return (
-    <S.Form>
-      <S.Input type="text" placeholder="Nome da cidade" />
-      <S.Button type="button">
+    <S.Form onSubmit={(e) => e.preventDefault()}>
+      <S.Input
+        type="text"
+        placeholder="Nome da cidade"
+        onChange={(e) => setCity(e.target.value)}
+        onKeyDown={handleKeyDown}
+      />
+      <S.Button type="button" onClick={() => weather(city)}>
         <SearchSvg />
       </S.Button>
     </S.Form>

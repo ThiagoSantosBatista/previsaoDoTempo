@@ -1,11 +1,12 @@
 import React from "react";
 import * as S from "./styles";
+import { WeatherProps } from "../../types/weather";
 
-const CardCidade = () => {
+const CardCidade = ({name}: WeatherProps) => {
   return (
     <S.CardCidade>
       <header>
-        <h1>Jundiaí</h1>
+        <h1>{name}</h1>
       </header>
     </S.CardCidade>
   );
