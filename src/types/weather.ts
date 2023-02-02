@@ -18,4 +18,5 @@ export interface WeatherProps {
     speed: number;
   };
   name: string;
+  cod: number;
 }

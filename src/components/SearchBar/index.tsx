@@ -9,24 +9,27 @@ interface SearchBarProps {
 const SearchBar = ({ weather }: SearchBarProps) => {
   const [city, setCity] = useState("");
 
-  function handleKeyDown(e: React.KeyboardEvent){
-    if(e.key === 'Enter'){
-      weather(city)
+  function handleKeyDown(e: React.KeyboardEvent) {
+    if (e.key === "Enter") {
+      weather(city);
     }
   }
 
   return (
-    <S.Form onSubmit={(e) => e.preventDefault()}>
-      <S.Input
-        type="text"
-        placeholder="Nome da cidade"
-        onChange={(e) => setCity(e.target.value)}
-        onKeyDown={handleKeyDown}
-      />
-      <S.Button type="button" onClick={() => weather(city)}>
-        <SearchSvg />
-      </S.Button>
-    </S.Form>
+    <>
+      <S.Form onSubmit={(e) => e.preventDefault()}>
+        <S.Input
+          type="text"
+          placeholder="Nome da cidade"
+          onChange={(e) => setCity(e.target.value)}
+          onKeyDown={handleKeyDown}
+        />
+        <S.Button type="button" onClick={() => weather(city)}>
+          <SearchSvg />
+        </S.Button>
+        <p className="error">Cidade não encontrada</p>
+      </S.Form>
+    </>
   );
 };
 

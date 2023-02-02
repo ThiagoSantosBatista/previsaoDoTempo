@@ -11,5 +11,9 @@ export const Main = styled.main`
   gap: 2.6rem;
   max-width: 144rem;
   margin: 0 auto;
-  padding: 7.2rem 16.8rem;
+  padding: 6.4rem 16.8rem;
+
+  &.erro .error{
+    display: block;
+  }
 `;
