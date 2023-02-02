@@ -25,7 +25,8 @@ const SearchBar = ({ weather }: SearchBarProps) => {
           onKeyDown={handleKeyDown}
         />
         <S.Button type="button" onClick={() => weather(city)}>
-          <SearchSvg />
+          <SearchSvg className="searchIcon" />
+          <span className="load"></span>
         </S.Button>
         <p className="error">Cidade não encontrada</p>
       </S.Form>

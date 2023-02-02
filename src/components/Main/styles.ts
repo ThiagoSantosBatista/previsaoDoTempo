@@ -13,7 +13,16 @@ export const Main = styled.main`
   margin: 0 auto;
   padding: 6.4rem 16.8rem;
 
-  &.erro .error{
+  &.erro .error {
     display: block;
+  }
+
+  &.loading {
+    .load {
+      display: block;
+    }
+    .searchIcon {
+      display: none;
+    }
   }
 `;

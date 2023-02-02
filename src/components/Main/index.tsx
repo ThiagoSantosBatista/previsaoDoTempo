@@ -8,19 +8,29 @@ import { WeatherProps } from "../../types/weather";
 
 const Main = () => {
   const [weatherData, setWeatherData] = useState<WeatherProps | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
 
   const main = useRef<HTMLElement | null>(null);
 
-  function toggleMain(action: string){
-    return action === 'remove' ? main.current?.classList.remove('erro') : main.current?.classList.add('erro');
+  function MainActions(action: string) {
+    if (action === "removeErro") {
+      return main.current?.classList.remove("erro");
+    }
+    if (action === "addErro") {
+      return main.current?.classList.add("erro");
+    }
+    if (action === "removeLoading") {
+      return main.current?.classList.remove("loading");
+    }
+    if (action === "addLoading") {
+      return main.current?.classList.add("loading");
+    }
   }
 
   async function getWeather(city: string) {
     setWeatherData(null);
     setError(false);
-    setIsLoading(true);
+    MainActions("addLoading");
 
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=pt_br&appid=48801d9f3fc6028a2c16f305f4418df1&units=metric`
@@ -36,21 +46,19 @@ const Main = () => {
       cod,
     };
 
-    setIsLoading(false);
+    MainActions("removeLoading");
 
     if (newWeather.cod === 200) {
-      toggleMain('remove');
-      main.current?.classList.remove('erro');
+      MainActions("removeErro");
       setWeatherData(newWeather);
     } else {
-      toggleMain('add');
+      MainActions("addErro");
     }
   }
 
   return (
     <S.Main ref={main}>
       <SearchBar weather={getWeather} />
-      {isLoading && <p>Carregando...</p>}
       {error && <p>Cidade não encontrada</p>}
       {weatherData && <CardCidade {...weatherData} />}
       {weatherData && <CardDados {...weatherData} />}

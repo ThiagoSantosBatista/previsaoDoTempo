@@ -46,4 +46,20 @@ export const Button = styled.button`
   border-radius: 0 1.5rem 1.5rem 0;
   background: rgba(1, 0, 17, 0.6);
   cursor: pointer;
+
+  .load {
+    display: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    border-top: 0.2rem solid transparent;
+    border-left: 0.2rem solid #ffffff;
+    animation: loading 0.8s linear infinite;
+  }
+
+  @keyframes loading {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 `;
