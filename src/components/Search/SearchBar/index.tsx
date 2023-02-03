@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ReactComponent as SearchSvg } from "../../assets/svgs/search.svg";
+import { ReactComponent as SearchSvg } from "../../../assets/svgs/search.svg";
 import * as S from "./styles";
 
 interface SearchBarProps {
@@ -20,6 +20,7 @@ const SearchBar = ({ weather }: SearchBarProps) => {
       <S.Form onSubmit={(e) => e.preventDefault()}>
         <S.Input
           type="text"
+          className="input"
           placeholder="Nome da cidade"
           onChange={(e) => setCity(e.target.value)}
           onKeyDown={handleKeyDown}

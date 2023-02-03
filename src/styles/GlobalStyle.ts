@@ -13,12 +13,11 @@ const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
   }
   body{
+    display: grid;
+    place-items: center;
     min-height: 100vh;
     color: #ffffff;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(${Background});
+    background: linear-gradient(to right bottom, #070707, #212121);
     font-size: 1.6rem;
   }
   img{

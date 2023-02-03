@@ -5,10 +5,12 @@ export const CardDados = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 4rem 3.2rem;
+  min-width: 46.2rem;
+  max-width: 46.2rem;
+  padding: 3.2rem;
   border-radius: 3rem;
-  border: 0.1rem solid #ffffff;
-  background: rgba(1, 0, 17, 0.4);
+  border: 0.1rem solid rgba(255, 255, 255, 0.7);
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
   backdrop-filter: blur(2rem);
 `;
 
@@ -42,7 +44,7 @@ export const TempoContent = styled.div`
 export const DadosUl = styled.ul`
   display: flex;
   justify-content: space-between;
-  gap: 0.8rem;
+  gap: 3rem;
 `;
 
 export const DadosItem = styled.li`

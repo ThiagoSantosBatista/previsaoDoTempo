@@ -1,10 +1,10 @@
-import React, { useRef, useState } from "react";
-import SearchBar from "../SearchBar";
+import { useRef, useState } from "react";
+import { ReactDOM } from "react";
 import CardCidade from "../CardCidade";
-import CardCincoDias from "../CardCincoDias";
 import CardDados from "../CardDados";
 import * as S from "./styles";
 import { WeatherProps } from "../../types/weather";
+import Search from "../Search";
 
 const Main = () => {
   const [weatherData, setWeatherData] = useState<WeatherProps | null>(null);
@@ -28,7 +28,6 @@ const Main = () => {
   }
 
   async function getWeather(city: string) {
-    setWeatherData(null);
     setError(false);
     MainActions("addLoading");
 
@@ -58,11 +57,10 @@ const Main = () => {
 
   return (
     <S.Main ref={main}>
-      <SearchBar weather={getWeather} />
+      <Search weather={getWeather} />
       {error && <p>Cidade não encontrada</p>}
       {weatherData && <CardCidade {...weatherData} />}
       {weatherData && <CardDados {...weatherData} />}
-      {weatherData && <CardCincoDias />}
     </S.Main>
   );
 };

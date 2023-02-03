@@ -2,38 +2,32 @@ import styled from "styled-components";
 
 export const Form = styled.form`
   position: relative;
-  grid-area: search;
   display: flex;
   align-items: center;
-  border-radius: 1.5rem;
-  margin-bottom: 10.4rem;
-  backdrop-filter: blur(2rem);
+  gap: 1rem;
 
   .error {
     display: none;
     position: absolute;
-    bottom: -5rem;
+    bottom: -4rem;
     left: 0;
-    padding: 1rem 1.5rem;
     color: yellow;
-    border-radius: 1.5rem;
-    border: 0.1rem solid #ffffff;
-    background: rgba(1, 0, 17, 0.4);
   }
 `;
 
 export const Input = styled.input`
   width: 100%;
   height: 5rem;
-  padding: 0 1.5rem;
-  border: 0.1rem solid #ffffff;
-  border-radius: 1.5rem 0 0 1.5rem;
-  background: rgba(1, 0, 17, 0.4);
+  padding: 0 1.2rem;
+  border: none;
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
   font-size: 1.8rem;
   color: #ffffff;
 
   &::placeholder {
-    color: rgba(255, 255, 255, 0.85);
+    color: #ffffff;
   }
 `;
 
@@ -41,10 +35,11 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   height: 5rem;
-  padding: 0 1.5rem;
-  border: 0.1rem solid #ffffff;
-  border-radius: 0 1.5rem 1.5rem 0;
-  background: rgba(1, 0, 17, 0.6);
+  padding: 0 1.2rem;
+  border: none;
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
   cursor: pointer;
 
   .load {
@@ -53,7 +48,7 @@ export const Button = styled.button`
     height: 2.5rem;
     border-radius: 100%;
     border-top: 0.2rem solid transparent;
-    border-left: 0.2rem solid #ffffff;
+    border-left: 0.2rem solid #070707;
     animation: loading 0.8s linear infinite;
   }
 
