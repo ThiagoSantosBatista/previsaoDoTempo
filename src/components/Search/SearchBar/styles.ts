@@ -11,7 +11,7 @@ export const Form = styled.form`
     position: absolute;
     bottom: -4rem;
     left: 0;
-    color: yellow;
+    color: #ffff00;
   }
 `;
 
@@ -19,15 +19,22 @@ export const Input = styled.input`
   width: 100%;
   height: 5rem;
   padding: 0 1.2rem;
-  border: none;
+  color: #ffffff;
   border-radius: 0.8rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   font-size: clamp(1.6rem, 1.4875rem + 0.3125vw, 1.8rem);
-  color: #ffffff;
+  transition: all 0.3s;
 
   &::placeholder {
     color: #ffffff;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      border: 0.1rem solid #ffffff;
+    }
   }
 `;
 
@@ -41,6 +48,7 @@ export const Button = styled.button`
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(20px);
   cursor: pointer;
+  transition: all 0.3s linear;
 
   .load {
     display: none;
@@ -50,6 +58,12 @@ export const Button = styled.button`
     border-top: 0.2rem solid transparent;
     border-left: 0.2rem solid #070707;
     animation: loading 0.8s linear infinite;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background: rgba(255, 255, 255, 0.9);
+    }
   }
 
   @keyframes loading {
