@@ -23,7 +23,7 @@ export const Input = styled.input`
   border-radius: 0.8rem;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
-  font-size: 1.8rem;
+  font-size: clamp(1.6rem, 1.4875rem + 0.3125vw, 1.8rem);
   color: #ffffff;
 
   &::placeholder {

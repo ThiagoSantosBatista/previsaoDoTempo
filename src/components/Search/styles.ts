@@ -17,8 +17,11 @@ export const Section = styled.section`
   );
   backdrop-filter: blur(2rem);
 
-  @media screen and (max-width: 950px) {
-  
+  @media screen and (max-width: 768px) {
+    min-height: 30rem;
+  }
+  @media screen and (max-width: 400px) {
+    padding: 3.2rem 2.4rem;
   }
 `;
 

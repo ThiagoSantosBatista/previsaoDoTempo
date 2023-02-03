@@ -16,15 +16,18 @@ export const CardCidade = styled.section`
   );
   backdrop-filter: blur(2rem);
   text-align: center;
-  
+
   h1 {
     color: rgba(255, 255, 255, 0.9);
-    font-size: 4.8rem;
+    font-size: clamp(3.6rem, 2.9250rem + 1.8750vw, 4.8rem);
     font-weight: 600;
     word-break: break-word;
   }
 
   @media screen and (max-width: 950px) {
     padding: 4rem 3.2rem;
+  }
+  @media screen and (max-width: 400px) {
+    padding: 3.2rem 2.4rem;
   }
 `;

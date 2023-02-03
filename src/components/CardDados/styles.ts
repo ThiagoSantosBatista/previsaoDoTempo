@@ -15,6 +15,10 @@ export const CardDados = styled.section`
     rgba(255, 255, 255, 0)
   );
   backdrop-filter: blur(2rem);
+
+  @media screen and (max-width: 400px) {
+    padding: 3.2rem 2.4rem;
+  }
 `;
 
 export const TempoHeader = styled.header`
@@ -23,20 +27,26 @@ export const TempoHeader = styled.header`
   margin-bottom: 4rem;
 
   img {
-    height: 10rem;
+    height: 100%;
     width: 10rem;
+  }
+
+  @media screen and (max-width: 768px){
+    img {
+    width: 8rem;
+  }
   }
 `;
 
 export const TempoContent = styled.div`
   p:first-child {
-    font-size: 4.8rem;
+    font-size: clamp(3.6rem, 2.9250rem + 1.8750vw, 4.8rem);
     font-weight: 600;
     margin-bottom: 1rem;
   }
   p {
     color: rgba(255, 255, 255, 0.85);
-    font-size: 2rem;
+    font-size: clamp(1.8rem, 1.6875rem + 0.3125vw, 2rem);
     font-weight: 500;
     &::first-letter {
       text-transform: uppercase;
@@ -49,7 +59,10 @@ export const DadosUl = styled.ul`
   justify-content: space-between;
   gap: 10rem;
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 768px){
+    gap: 5rem;
+  }
+  @media screen and (max-width: 440px) {
     flex-direction: column;
     gap: 2rem;
   }
