@@ -27,22 +27,22 @@ export const TempoHeader = styled.header`
   margin-bottom: 4rem;
 
   img {
-    height: 100%;
     width: 10rem;
+    height: 100%;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     img {
-    width: 8rem;
-  }
+      width: 8rem;
+    }
   }
 `;
 
 export const TempoContent = styled.div`
   p:first-child {
-    font-size: clamp(3.6rem, 2.9250rem + 1.8750vw, 4.8rem);
-    font-weight: 600;
     margin-bottom: 1rem;
+    font-size: clamp(3.6rem, 2.925rem + 1.875vw, 4.8rem);
+    font-weight: 600;
   }
   p {
     color: rgba(255, 255, 255, 0.85);
@@ -59,7 +59,7 @@ export const DadosUl = styled.ul`
   justify-content: space-between;
   gap: 10rem;
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     gap: 5rem;
   }
   @media screen and (max-width: 440px) {

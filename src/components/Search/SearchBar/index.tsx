@@ -25,7 +25,11 @@ const SearchBar = ({ weather }: SearchBarProps) => {
           onChange={(e) => setCity(e.target.value)}
           onKeyDown={handleKeyDown}
         />
-        <S.Button type="button" onClick={() => weather(city)}>
+        <S.Button
+          aria-label="Pesquisar cidade"
+          type="button"
+          onClick={() => weather(city)}
+        >
           <SearchSvg className="searchIcon" />
           <span className="load"></span>
         </S.Button>

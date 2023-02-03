@@ -19,7 +19,7 @@ export const CardCidade = styled.section`
 
   h1 {
     color: rgba(255, 255, 255, 0.9);
-    font-size: clamp(3.6rem, 2.9250rem + 1.8750vw, 4.8rem);
+    font-size: clamp(3.6rem, 2.925rem + 1.875vw, 4.8rem);
     font-weight: 600;
     word-break: break-word;
   }

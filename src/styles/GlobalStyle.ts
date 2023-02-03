@@ -15,12 +15,12 @@ const GlobalStyle = createGlobalStyle`
     display: grid;
     place-items: center;
     min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 5%;
+    max-width: 144rem;
     color: #ffffff;
     background: linear-gradient(to right bottom, #070707, #212121);
     font-size: 1.6rem;
-    max-width: 144rem;
-    margin: 0 auto;
-    padding: 0 5%;
 
   }
   img{
@@ -30,9 +30,9 @@ const GlobalStyle = createGlobalStyle`
   a, li, button{
     color: inherit;
     list-style: none;
-    text-decoration: none;
-    font-weight: inherit;
     font-size: inherit;
+    font-weight: inherit;
+    text-decoration: none;
   }
 `;
 

@@ -17,12 +17,20 @@ const Search = ({ weather }: SearchBarProps) => {
         <nav>
           <ul>
             <li>
-              <a href="https://github.com/ThiagoSantosBatista" target="_blank">
+              <a
+                aria-label="Link para o meu GitHub"
+                href="https://github.com/ThiagoSantosBatista"
+                target="_blank"
+              >
                 <GithubSvg />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/thiago-santos-batista/" target="_blank">
+              <a
+                aria-label="Link para o meu LinkedIn"
+                href="https://www.linkedin.com/in/thiago-santos-batista/"
+                target="_blank"
+              >
                 <LinkedinSvg />
               </a>
             </li>

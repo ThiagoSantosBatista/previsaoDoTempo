@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import { ReactDOM } from "react";
 import CardCidade from "../CardCidade";
 import CardDados from "../CardDados";
 import * as S from "./styles";

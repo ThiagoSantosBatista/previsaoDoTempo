@@ -2,7 +2,7 @@ import React from "react";
 import * as S from "./styles";
 import { WeatherProps } from "../../types/weather";
 
-const CardCidade = ({name}: WeatherProps) => {
+const CardCidade = ({ name }: WeatherProps) => {
   return (
     <S.CardCidade>
       <header>
