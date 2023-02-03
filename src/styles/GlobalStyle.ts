@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
     color: #ffffff;
     background: linear-gradient(to right bottom, #070707, #212121);
     font-size: 1.6rem;
+    max-width: 144rem;
+    margin: 0 auto;
+    padding: 0 5%;
+
   }
   img{
       display: block;

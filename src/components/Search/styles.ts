@@ -5,7 +5,7 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 36.7rem;
+  width: 100%;
   min-height: 35rem;
   padding: 3.2rem;
   border-radius: 3rem;
@@ -16,6 +16,10 @@ export const Section = styled.section`
     rgba(255, 255, 255, 0)
   );
   backdrop-filter: blur(2rem);
+
+  @media screen and (max-width: 950px) {
+  
+  }
 `;
 
 export const Article = styled.article`

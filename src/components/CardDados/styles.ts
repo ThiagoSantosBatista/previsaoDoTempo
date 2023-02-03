@@ -5,12 +5,15 @@ export const CardDados = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 46.2rem;
-  max-width: 46.2rem;
+  width: 100%;
   padding: 3.2rem;
   border-radius: 3rem;
   border: 0.1rem solid rgba(255, 255, 255, 0.7);
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
   backdrop-filter: blur(2rem);
 `;
 
@@ -19,7 +22,7 @@ export const TempoHeader = styled.header`
   justify-content: space-between;
   margin-bottom: 4rem;
 
-  img{
+  img {
     height: 10rem;
     width: 10rem;
   }
@@ -44,7 +47,12 @@ export const TempoContent = styled.div`
 export const DadosUl = styled.ul`
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 10rem;
+
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 `;
 
 export const DadosItem = styled.li`

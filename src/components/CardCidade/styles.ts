@@ -23,4 +23,8 @@ export const CardCidade = styled.section`
     font-weight: 600;
     word-break: break-word;
   }
+
+  @media screen and (max-width: 950px) {
+    padding: 4rem 3.2rem;
+  }
 `;
