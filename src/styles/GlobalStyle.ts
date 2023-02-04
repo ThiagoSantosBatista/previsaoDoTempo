@@ -15,9 +15,7 @@ const GlobalStyle = createGlobalStyle`
     display: grid;
     place-items: center;
     min-height: 100vh;
-    margin: 0 auto;
     padding: 0 5%;
-    max-width: 144rem;
     color: #ffffff;
     background: linear-gradient(to right bottom, #070707, #212121);
     font-size: 1.6rem;

@@ -27,6 +27,7 @@ const Main = () => {
   }
 
   async function getWeather(city: string) {
+    const input: HTMLInputElement | null = document.querySelector(".input");
     setError(false);
     MainActions("addLoading");
 
@@ -45,6 +46,9 @@ const Main = () => {
     };
 
     MainActions("removeLoading");
+    if (input) {
+      input.value = "";
+    }
 
     if (newWeather.cod === 200) {
       MainActions("removeErro");
